@@ -1,0 +1,18 @@
+{
+    "name": "JoyStiackEditor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:7716652e6b89d44338b29d7fde7933bd"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

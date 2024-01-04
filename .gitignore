@@ -1,0 +1,71 @@
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ogs/
+
+
+
+
+# Never ignore DLLs in the FMOD subfolder.
+!/[Aa]ssets/Plugins/FMOD/**/lib/*
+
+# Don't ignore images and gizmos used by FMOD in the Unity Editor.
+!/[Aa]ssets/Gizmos/FMOD/*
+!/[Aa]ssets/Editor Default Resources/FMOD/*
+                    
+# Ignore the Cache folder since it is updated locally.
+/[Aa]ssets/Plugins/FMOD/Cache/*
+                    
+# Ignore bank files in the StreamingAssets folder.
+/[Aa]ssets/StreamingAssets/**/*.bank
+/[Aa]ssets/StreamingAssets/**/*.bank.meta
+                    
+# If the source bank files are kept outside of the StreamingAssets folder then these can be ignored.
+# Log files can be ignored.
+fmod_editor.log
+
+
+# Visual Studio 2015 cache directory
+/.vs/
+/iOS Build/
+#Packages/*.json
+ExportedObj/
+.consulo/
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+
+# Unity3D generated meta files
+*.pidb.meta
+*.unitypackage.meta
+
+# Unity3D Generated File On Crash Reports
+sysinfo.txt
+
+# Builds
+*.apk
+*.unitypackage
+
+node_modules
+FR2_Cache.asset
+Assets/Firebase/Plugins/Firebase.Storage.pdb.meta
+BuildReports/iOS_2022-10-28_11-30-42.bbi
+Assets/Firebase/Editor/Firebase.Editor.pdb.meta
+Assets/Firebase/Plugins/Firebase.App.pdb.meta
+Assets/Firebase/Plugins/Firebase.Auth.pdb.meta
+Assets/Firebase/Plugins/Firebase.Platform.pdb.meta
+Assets/Firebase/Plugins/Firebase.TaskExtension.pdb.meta
+Assets/Firebase/Plugins/iOS/Firebase.App.pdb.meta
+Assets/Firebase/Plugins/iOS/Firebase.Auth.pdb.meta
+BuildReports/iOS_2022-11-02_17-49-29.bbi
+Recordings/
