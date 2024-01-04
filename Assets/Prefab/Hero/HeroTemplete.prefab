@@ -181,6 +181,7 @@ GameObject:
   - component: {fileID: 8544372371158814776}
   - component: {fileID: 8544372371158814775}
   - component: {fileID: 8544372371158814774}
+  - component: {fileID: 5174103441544853499}
   m_Layer: 0
   m_Name: HeroTemplete
   m_TagString: Untagged
@@ -259,3 +260,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: {fileID: 11400000, guid: 9e587c996eb114091815823039b997c2, type: 2}
+--- !u!114 &5174103441544853499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8544372371158814779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da7346ea3e8f9430db4f817cdfbc8fd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  singletonGameObjects: {fileID: 11400000, guid: 461b9b6f02a0b4e738d48d37608daf72, type: 2}

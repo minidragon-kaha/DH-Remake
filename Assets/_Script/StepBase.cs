@@ -1,8 +1,8 @@
 using UnityEngine;
 
-namespace DigiHero.Initial
+namespace DigiHero
 {
-    public abstract class InitialStepBase : MonoBehaviour
+    public abstract class StepBase : MonoBehaviour
     {
         public abstract void Process(System.Action onEnded);
     }

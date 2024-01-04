@@ -3,7 +3,7 @@ using Obvious.Soap;
 
 namespace DigiHero.Initial
 {
-    public class SetUpPlayer : InitialStepBase
+    public class SetUpPlayer : StepBase
     {
         [SerializeField] private StatsContainer heroPrefab;
         [SerializeField] private Vector3Variable startPositionVariable;
