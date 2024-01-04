@@ -9,8 +9,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b5a2b9c245bff45ca9f2eaceed4b3839, type: 3}
-  m_Name: Hero_Tags
+  m_Script: {fileID: 11500000, guid: 1300736a6c75069498acdad864241816, type: 3}
+  m_Name: Hero_StartPoint
   m_EditorClassIdentifier: 
+  _guid: b294f62e29fbd4e2b9e8f24c76138c48
+  _value: {x: 0, y: 0, z: -10}
+  _debugLogEnabled: 0
+  _saved: 0
+  _defaultValue: {x: 0, y: 0, z: 0}
   _resetOn: 0
-  _list: []
