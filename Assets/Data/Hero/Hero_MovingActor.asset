@@ -2,19 +2,15 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-  m_ObjectHideFlags: 32
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1300736a6c75069498acdad864241816, type: 3}
-  m_Name: Hero_MovingVector
+  m_Script: {fileID: 11500000, guid: 076e8e1f1417a0b4c8e48e5c8e2057b0, type: 3}
+  m_Name: Hero_MovingActor
   m_EditorClassIdentifier: 
-  _guid: 703b271d145854edf8ada27d5a537bfb
-  _value: {x: 0, y: 0, z: 0}
   _debugLogEnabled: 0
-  _saved: 0
-  _defaultValue: {x: 0, y: 0, z: 0}
-  _resetOn: 0
+  _debugValue: {x: 0, y: 0, z: 0}

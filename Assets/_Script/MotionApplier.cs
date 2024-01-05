@@ -5,17 +5,16 @@ namespace DigiHero
 {
     public class MotionApplier : MonoBehaviour
     {
-        [SerializeField] private Vector3Variable movingVector;
-        [SerializeField] private StatsContainer statsContainer;
+        [SerializeField] private Vector3Reference movingVector;
+
+        public void UpdateMovingVector(Vector3 movingVector)
+        {
+            this.movingVector.Value = movingVector;
+        }
 
         private void Update()
         {
-            float moveSpeed = 1f;
-
-            if (statsContainer != null)
-                moveSpeed = statsContainer.MoveSpeed;
-
-            transform.position += moveSpeed * Time.deltaTime * movingVector.Value;
+            transform.position += movingVector.Value * Time.deltaTime;
         }
     }
 }

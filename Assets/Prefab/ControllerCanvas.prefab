@@ -102,7 +102,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dynamicJoystick: {fileID: 4566180345814416352}
-  movingVector: {fileID: 11400000, guid: 703b271d145854edf8ada27d5a537bfb, type: 2}
+  movingVector: {fileID: 11400000, guid: b5fb8d6a256794d00895532bde427f31, type: 2}
 --- !u!1 &2278139473659600778
 GameObject:
   m_ObjectHideFlags: 0
