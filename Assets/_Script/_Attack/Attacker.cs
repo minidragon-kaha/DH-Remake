@@ -73,6 +73,11 @@ namespace DigiHero
         {
             if (target == null)
             {
+                if (isPlayingAttackAnimation)
+                {
+                    isPlayingAttackAnimation = false;
+                    animator.Play(idleStateHash);
+                }
                 return;
             }
 
@@ -117,7 +122,7 @@ namespace DigiHero
 
         private void Attack(int index)
         {
-            Debug.Log("Attck " + index + " play " + attackPoints[index].audioClip.name);
+            Debug.Log("Attck " + index + " play " + (attackPoints[index].audioClip == null ? "null" : attackPoints[index].audioClip.name));
         }
     }
 }
