@@ -8,12 +8,11 @@ namespace DigiHero
     public class Rotater : MonoBehaviour
     {
         [SerializeField] private FloatVariable rotateSpeed;
-
-        private Vector3 targetForward;
+        [SerializeField] private Vector3Reference targetForward;
 
         public void UpdateMovingVector(Vector3 movingVector)
         {
-            targetForward = movingVector;
+            targetForward.Value = movingVector;
         }
 
         private void Update()
