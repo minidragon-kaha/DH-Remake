@@ -234,6 +234,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tags:
   - Player
+  scriptableListTaggedObject: {fileID: 11400000, guid: 01d412fc1c91e46d7b28b247c3a56b8c, type: 2}
 --- !u!114 &8544372371158814775
 MonoBehaviour:
   m_ObjectHideFlags: 0
