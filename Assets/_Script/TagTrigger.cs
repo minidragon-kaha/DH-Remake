@@ -3,6 +3,7 @@ using UnityEngine;
 
 namespace DigiHero
 {
+    [AddComponentMenu("DigiHero/TagTrigger")]
     [RequireComponent(typeof(Rigidbody), typeof(Collider))]
     public class TagTrigger : MonoBehaviour
     {

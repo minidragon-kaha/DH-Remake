@@ -2,6 +2,7 @@ using UnityEngine;
 
 namespace DigiHero.Attack
 {
+    [AddComponentMenu("DigiHero/Attack/Attacker")]
     public class Attacker : MonoBehaviour
     {
         public bool IsHavingTarget { get; private set; } = false;

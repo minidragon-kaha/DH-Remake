@@ -4,6 +4,7 @@ using System.Collections.Generic;
 
 namespace DigiHero
 {
+    [AddComponentMenu("DigiHero/MotionApplier")]
     public class MotionApplier : MonoBehaviour
     {
         [SerializeField] private Vector3Reference movingVector;

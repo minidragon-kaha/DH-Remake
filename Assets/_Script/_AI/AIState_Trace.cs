@@ -1,8 +1,9 @@
 using Obvious.Soap;
 using UnityEngine;
 
-namespace DigiHero
+namespace DigiHero.AI
 {
+    [AddComponentMenu("DigiHero/AI/AIState_Trace")]
     public class AIState_Trace : MonoBehaviour
     {
         [SerializeField] private UnityEngine.Events.UnityEvent<Vector3> onMovingVectorUpdated;

@@ -4,6 +4,7 @@ using UnityEngine.Events;
 
 namespace DigiHero
 {
+    [AddComponentMenu("DigiHero/Detector")]
     public class Detector : MonoBehaviour
     {
         public TaggedObject Target { get; private set; }

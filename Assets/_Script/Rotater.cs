@@ -5,6 +5,7 @@ using UnityEngine;
 
 namespace DigiHero
 {
+    [AddComponentMenu("DigiHero/Rotater")]
     public class Rotater : MonoBehaviour
     {
         [SerializeField] private FloatVariable rotateSpeed;

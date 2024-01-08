@@ -5,6 +5,7 @@ using UnityEngine.Events;
 
 namespace DigiHero
 {
+    [AddComponentMenu("DigiHero/DyableObject")]
     public class DyableObject : MonoBehaviour
     {
         [SerializeField] private StatsContainer statsContainer;

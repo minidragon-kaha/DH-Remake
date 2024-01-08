@@ -4,6 +4,7 @@ using UnityEngine.Events;
 
 namespace DigiHero
 {
+    [AddComponentMenu("DigiHero/JoystickerHandler")]
     public class JoystickerHandler : MonoBehaviour
     {
         [SerializeField] private DynamicJoystick dynamicJoystick;

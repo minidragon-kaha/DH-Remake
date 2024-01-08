@@ -3,6 +3,7 @@ using Obvious.Soap;
 
 namespace DigiHero.Initial
 {
+    [UnityEngine.AddComponentMenu("DigiHero/Initial/SetUpPlayer")]
     public class SetUpPlayer : StepBase
     {
         [SerializeField] private StatsContainer heroPrefab;

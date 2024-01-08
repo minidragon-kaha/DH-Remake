@@ -3,6 +3,7 @@ using UnityEngine;
 
 namespace DigiHero
 {
+    [AddComponentMenu("DigiHero/PositionApplier")]
     public class PositionApplier : MonoBehaviour
     {
         [SerializeField] private Vector3Variable positionVariable;

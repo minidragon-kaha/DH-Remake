@@ -5,6 +5,7 @@ using System;
 
 namespace DigiHero
 {
+    [AddComponentMenu("DigiHero/StatsContainer")]
     public class StatsContainer : MonoBehaviour
     {
         [SerializeField] private IntVariable moveSpeed;
