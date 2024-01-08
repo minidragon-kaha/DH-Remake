@@ -4,7 +4,7 @@ using UnityEngine.Events;
 
 namespace DigiHero.Attack
 {
-    [AddComponentMenu("DigiHero/Attack/AttackableTargetDetector")]
+    [AddComponentMenu("_DigiHero/Attack/AttackableTargetDetector")]
     public class AttackableTargetDetector : MonoBehaviour
     {
         private AttackableTarget Target { get; set; }

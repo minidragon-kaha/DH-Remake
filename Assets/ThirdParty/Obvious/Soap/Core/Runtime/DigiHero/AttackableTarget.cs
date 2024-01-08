@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace DigiHero
 {
-    [AddComponentMenu("DigiHero/AttackableTarget")]
+    [AddComponentMenu("_DigiHero/AttackableTarget")]
     public class AttackableTarget : MonoBehaviour
     {
         public int Camp { get { return camp; } }

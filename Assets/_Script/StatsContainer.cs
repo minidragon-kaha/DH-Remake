@@ -1,11 +1,10 @@
 using UnityEngine;
 using Obvious.Soap;
 using UnityEngine.Events;
-using System;
 
 namespace DigiHero
 {
-    [AddComponentMenu("DigiHero/StatsContainer")]
+    [AddComponentMenu("_DigiHero/StatsContainer")]
     public class StatsContainer : MonoBehaviour
     {
         [SerializeField] private IntVariable moveSpeed;

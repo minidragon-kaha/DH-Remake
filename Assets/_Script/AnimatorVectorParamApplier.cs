@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace DigiHero
 {
-    [AddComponentMenu("DigiHero/AnimatorVectorParamApplier")]
+    [AddComponentMenu("_DigiHero/AnimatorVectorParamApplier")]
     public class AnimatorVectorParamApplier : MonoBehaviour
     {
         [SerializeField] private Vector3Variable fromValue;

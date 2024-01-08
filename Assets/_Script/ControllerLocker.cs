@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace DigiHero
 {
-    [AddComponentMenu("DigiHero/ControllerLocker")]
+    [AddComponentMenu("_DigiHero/ControllerLocker")]
     public class ControllerLocker : LockerBase
     {
         public static ControllerLocker Instance { get; private set; }

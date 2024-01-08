@@ -3,7 +3,7 @@ using Obvious.Soap;
 
 namespace DigiHero
 {
-    [AddComponentMenu("DigiHero/PositionHandler")]
+    [AddComponentMenu("_DigiHero/PositionHandler")]
     public class PositionHandler : MonoBehaviour
     {
         [SerializeField] private Vector3Variable positionVariable;

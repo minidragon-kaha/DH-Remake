@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace DigiHero.FailFlow
 {
-    [UnityEngine.AddComponentMenu("DigiHero/FailFlow/ResetHeroPosition")]
+    [UnityEngine.AddComponentMenu("_DigiHero/FailFlow/ResetHeroPosition")]
     public class ResetHeroPosition : StepBase
     {
         [SerializeField] private ScriptableListGameObject heroGameObjectInstanceList;

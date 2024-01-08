@@ -3,7 +3,7 @@ using Obvious.Soap;
 
 namespace DigiHero
 {
-    [AddComponentMenu("DigiHero/SingletonGameObjectApplier")]
+    [AddComponentMenu("_DigiHero/SingletonGameObjectApplier")]
     public class SingletonGameObjectApplier : MonoBehaviour
     {
         [SerializeField] private ScriptableListGameObject singletonGameObjects;

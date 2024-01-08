@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace DigiHero
 {
-    [AddComponentMenu("DigiHero/Spawner")]
+    [AddComponentMenu("_DigiHero/Spawner")]
     public class Spawner : MonoBehaviour
     {
         [SerializeField] private float spawnTime;

@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace DigiHero
 {
-    [AddComponentMenu("DigiHero/LockerBase")]
+    [AddComponentMenu("_DigiHero/LockerBase")]
     public class LockerBase : MonoBehaviour
     {
         public bool IsLocked { get { return lockers.Count > 0; } }

@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace DigiHero.Attack
 {
-    [AddComponentMenu("DigiHero/Attack/AttackerGroup")]
+    [AddComponentMenu("_DigiHero/Attack/AttackerGroup")]
     public class AttackerGroup : MonoBehaviour
     {
         [Tooltip("The attackers in this group, will auto get from children if not set")]

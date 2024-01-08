@@ -1,11 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
 using Obvious.Soap;
 using UnityEngine;
 
 namespace DigiHero
 {
-    [AddComponentMenu("DigiHero/Rotater")]
+    [AddComponentMenu("_DigiHero/Rotater")]
     public class Rotater : MonoBehaviour
     {
         [SerializeField] private FloatVariable rotateSpeed;

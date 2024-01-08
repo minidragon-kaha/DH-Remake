@@ -4,7 +4,7 @@ using Obvious.Soap;
 
 namespace DigiHero
 {
-    [AddComponentMenu("DigiHero/TaggedObject")]
+    [AddComponentMenu("_DigiHero/TaggedObject")]
     [RequireComponent(typeof(Collider))]
     public class TaggedObject : MonoBehaviour
     {

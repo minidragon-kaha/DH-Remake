@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace DigiHero
 {
-    [AddComponentMenu("DigiHero/StepProcessor")]
+    [AddComponentMenu("_DigiHero/StepProcessor")]
     public class StepProcessor : MonoBehaviour
     {
         [SerializeField] private StepBase[] steps;
