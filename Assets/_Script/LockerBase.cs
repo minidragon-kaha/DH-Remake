@@ -9,15 +9,15 @@ namespace DigiHero
 
         private List<object> lockers = new List<object>();
 
-        public void Lock()
+        public void Lock(object locker)
         {
-            lockers.Add(new object());
+            lockers.Add(locker);
         }
 
-        public void Unlock()
+        public void Unlock(object locker)
         {
-            if (lockers.Count > 0)
-                lockers.RemoveAt(0);
+            if (lockers.Contains(locker))
+                lockers.Remove(locker);
         }
     }
 }

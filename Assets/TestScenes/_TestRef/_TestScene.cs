@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace DigiHero.TestScene
@@ -18,6 +16,16 @@ namespace DigiHero.TestScene
             {
                 text.text = "Target: " + taggedObject.name;
             }
+        }
+
+        public void LockController()
+        {
+            ControllerLocker.Instance.Lock(this);
+        }
+
+        public void UnlockController()
+        {
+            ControllerLocker.Instance.Unlock(this);
         }
     }
 }

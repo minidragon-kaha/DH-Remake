@@ -229,7 +229,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0139c1ffbf8924004be1f74f334e3ced, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fromValue: {fileID: 11400000, guid: 703b271d145854edf8ada27d5a537bfb, type: 2}
+  fromValue: {fileID: 11400000, guid: b5fb8d6a256794d00895532bde427f31, type: 2}
   animator: {fileID: 6800341550410533691}
   paramName_x: MovingVector_x
   paramName_y: 
@@ -362,6 +362,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: {fileID: 11400000, guid: 9e587c996eb114091815823039b997c2, type: 2}
+  hp: {fileID: 11400000, guid: fbaa7065e5096456ca1ecb579c3ea9f6, type: 2}
 --- !u!114 &5174103441544853499
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56cdb8ad39a5bdd4f8ed3d18fae14a63, type: 3}
   m_Name: Hero_Stats_HP
   m_EditorClassIdentifier: 
-  _guid: 
-  _value: 0
+  _guid: fbaa7065e5096456ca1ecb579c3ea9f6
+  _value: 100
   _debugLogEnabled: 0
   _saved: 0
   _defaultValue: 0
   _resetOn: 0
-  _isClamped: 0
-  _minMax: {x: 0, y: 2147483647}
+  _isClamped: 1
+  _minMax: {x: 0, y: 999}
