@@ -10,7 +10,7 @@ namespace DigiHero
     {
         public TaggedObject Target { get; private set; }
 
-        [Tooltip("目標標籤")]
+        [Tooltip("進入範圍內的物件有TaggedObject時，偵測目標標籤")]
         [SerializeField] private string targetTag;
         [Tooltip("偵測範圍")]
         [SerializeField] private IntVariable detectRangeVariable;
