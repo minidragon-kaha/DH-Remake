@@ -1,11 +1,12 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-namespace DigiHero
+namespace DigiHero.Attack
 {
     public class Attacker : MonoBehaviour
     {
+        public bool IsHavingTarget { get; private set; } = false;
+        public bool isCanAttack = true;
+
         [System.Serializable]
         private class AttackPoint
         {
@@ -17,11 +18,9 @@ namespace DigiHero
 
         [SerializeField] private Animator animator;
         [SerializeField] private string attackStateName;
-        [SerializeField] private string idleStateName;
         [SerializeField] private AttackPoint[] attackPoints;
         [SerializeField] private float attackCooldown;
 
-        private int idleStateHash = -1;
         private int attackStateHash = -1;
 
         private AttackableTarget target;
@@ -40,13 +39,6 @@ namespace DigiHero
                 return;
             }
 
-            if (animator.HasState(0, idleStateHash))
-            {
-                Debug.LogError("Attacker: No idle state found");
-                return;
-            }
-
-            idleStateHash = Animator.StringToHash(idleStateName);
             attackStateHash = Animator.StringToHash(attackStateName);
         }
 
@@ -71,18 +63,15 @@ namespace DigiHero
 
         private void Update()
         {
-            if (target == null)
+            IsHavingTarget = (target != null);
+
+            if (target == null || !isCanAttack)
             {
                 if (isPlayingAttackAnimation)
                 {
                     isPlayingAttackAnimation = false;
-                    animator.Play(idleStateHash);
+                    attackTimer = 0f;
                 }
-                return;
-            }
-
-            if (attackStateHash == -1 || idleStateHash == -1)
-            {
                 return;
             }
 
@@ -99,7 +88,7 @@ namespace DigiHero
                 return;
             }
 
-            if (!isPlayingAttackAnimation)
+            if (!isPlayingAttackAnimation && attackStateHash != -1)
             {
                 isPlayingAttackAnimation = true;
                 animator.Play(attackStateHash);
@@ -114,7 +103,6 @@ namespace DigiHero
                 if (curAttackPointIndex >= attackPoints.Length)
                 {
                     isPlayingAttackAnimation = false;
-                    animator.Play(idleStateHash);
                     cooldownTimer = attackCooldown;
                 }
             }

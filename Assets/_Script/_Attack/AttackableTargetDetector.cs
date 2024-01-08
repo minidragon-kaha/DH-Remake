@@ -1,10 +1,8 @@
-using System.Collections;
-using System.Collections.Generic;
 using Obvious.Soap;
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace DigiHero
+namespace DigiHero.Attack
 {
     public class AttackableTargetDetector : MonoBehaviour
     {
