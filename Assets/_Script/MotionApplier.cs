@@ -9,6 +9,8 @@ namespace DigiHero
     {
         [Tooltip("移動動量")]
         [SerializeField] private Vector3Reference movingVector;
+        [Tooltip("數值容器")]
+        [SerializeField] private StatsContainer statsContainer;
 
         private List<object> pauseLockers = new List<object>();
 
@@ -33,7 +35,7 @@ namespace DigiHero
             if (pauseLockers.Count > 0)
                 return;
 
-            transform.position += movingVector.Value * Time.deltaTime;
+            transform.position += movingVector.Value * statsContainer.MoveSpeed * Time.deltaTime;
         }
     }
 }

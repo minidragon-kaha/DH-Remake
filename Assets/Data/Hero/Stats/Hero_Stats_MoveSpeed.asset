@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Hero_Stats_MoveSpeed
   m_EditorClassIdentifier: 
   _guid: 9e587c996eb114091815823039b997c2
-  _value: 10
+  _value: 30
   _debugLogEnabled: 0
   _saved: 0
   _defaultValue: 0

@@ -321,6 +321,7 @@ MonoBehaviour:
     UseLocal: 0
     LocalValue: {x: 0, y: 0, z: 0}
     Variable: {fileID: 11400000, guid: b5fb8d6a256794d00895532bde427f31, type: 2}
+  statsContainer: {fileID: 8544372371158814774}
 --- !u!114 &8544372371158814776
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -363,6 +364,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: {fileID: 11400000, guid: 9e587c996eb114091815823039b997c2, type: 2}
   hp: {fileID: 11400000, guid: fbaa7065e5096456ca1ecb579c3ea9f6, type: 2}
+  onHpChanged:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &5174103441544853499
 MonoBehaviour:
   m_ObjectHideFlags: 0
