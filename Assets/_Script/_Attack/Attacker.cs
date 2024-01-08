@@ -1,3 +1,4 @@
+using UnityEditor.EditorTools;
 using UnityEngine;
 
 namespace DigiHero.Attack
@@ -11,15 +12,20 @@ namespace DigiHero.Attack
         [System.Serializable]
         private class AttackPoint
         {
+            [Tooltip("攻擊點的正規化時間，範圍為 0 ~ 1")]
             [Range(0f, 1f)]
             public float normalizedTime;
-
+            [Tooltip("攻擊點的音效")]
             public AudioClip audioClip;
         }
 
+        [Tooltip("攻擊動畫播放器")]
         [SerializeField] private Animator animator;
+        [Tooltip("攻擊動畫的名稱")]
         [SerializeField] private string attackStateName;
+        [Tooltip("攻擊點")]
         [SerializeField] private AttackPoint[] attackPoints;
+        [Tooltip("攻擊冷卻時間")]
         [SerializeField] private float attackCooldown;
 
         private int attackStateHash = -1;

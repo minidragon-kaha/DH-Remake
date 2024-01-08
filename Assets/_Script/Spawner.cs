@@ -5,9 +5,13 @@ namespace DigiHero
     [AddComponentMenu("_DigiHero/Spawner")]
     public class Spawner : MonoBehaviour
     {
+        [Tooltip("生成間隔")]
         [SerializeField] private float spawnTime;
+        [Tooltip("生成物件Prefab")]
         [SerializeField] private GameObject spawnPrefab;
+        [Tooltip("生成範圍")]
         [SerializeField] private float spawnRange;
+        [Tooltip("生成數量")]
         [SerializeField] private int spawnAmount;
 
         private TaggedObject detectedObject;

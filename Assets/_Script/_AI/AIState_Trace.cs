@@ -6,6 +6,7 @@ namespace DigiHero.AI
     [AddComponentMenu("_DigiHero/AI/AIState_Trace")]
     public class AIState_Trace : MonoBehaviour
     {
+        [Tooltip("開始追蹤時，會觸發此事件")]
         [SerializeField] private UnityEngine.Events.UnityEvent<Vector3> onMovingVectorUpdated;
 
         private Vector3 movingVector;

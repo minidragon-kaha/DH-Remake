@@ -9,7 +9,9 @@ namespace DigiHero
     {
         public event System.Action OnTriggered;
 
+        [Tooltip("可以觸發的標籤")]
         [SerializeField] private List<string> targetTags = new List<string>();
+        [Tooltip("觸發時要執行的事件")]
         [SerializeField] private UnityEngine.Events.UnityEvent onTriggeredUnityEvent;
 
         private Rigidbody rb;

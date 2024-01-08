@@ -9,9 +9,13 @@ namespace DigiHero.Attack
     {
         private AttackableTarget Target { get; set; }
 
+        [Tooltip("目標陣營")]
         [SerializeField] private int targetCamp;
+        [Tooltip("偵測範圍")]
         [SerializeField] private IntVariable detectRangeVariable;
+        [Tooltip("攻擊目標列表，將會從中找出最近的目標")]
         [SerializeField] private ScriptableListAttackableObject attackableObjectList;
+        [Tooltip("當目標更新時，會觸發此事件")]
         [SerializeField] private UnityEvent<AttackableTarget> onTargetUpdated;
 
         private void Update()

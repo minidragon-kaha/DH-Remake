@@ -5,7 +5,7 @@ namespace DigiHero.Attack
     [AddComponentMenu("_DigiHero/Attack/AttackerGroup")]
     public class AttackerGroup : MonoBehaviour
     {
-        [Tooltip("The attackers in this group, will auto get from children if not set")]
+        [Tooltip("攻擊者列表，所有攻擊者中同時只會有一個攻擊者攻擊，排在前面的攻擊者優先攻擊")]
         [SerializeField] private Attacker[] attackers;
 
         private void Awake()

@@ -6,7 +6,9 @@ namespace DigiHero
     [AddComponentMenu("_DigiHero/Rotater")]
     public class Rotater : MonoBehaviour
     {
+        [Tooltip("旋轉速度")]
         [SerializeField] private FloatVariable rotateSpeed;
+        [Tooltip("移動動量")]
         [SerializeField] private Vector3Reference targetForward;
 
         public void UpdateMovingVector(Vector3 movingVector)

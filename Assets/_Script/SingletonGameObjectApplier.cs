@@ -6,6 +6,7 @@ namespace DigiHero
     [AddComponentMenu("_DigiHero/SingletonGameObjectApplier")]
     public class SingletonGameObjectApplier : MonoBehaviour
     {
+        [Tooltip("單例遊戲物件清單，用來確保此遊戲物件只有一個存在，因此此清單只能有一個元素")]
         [SerializeField] private ScriptableListGameObject singletonGameObjects;
 
         private void Awake()

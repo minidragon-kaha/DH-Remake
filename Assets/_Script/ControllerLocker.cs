@@ -7,6 +7,7 @@ namespace DigiHero
     {
         public static ControllerLocker Instance { get; private set; }
 
+        [Tooltip("控制器根節點")]
         [SerializeField] private GameObject controllerRoot;
 
         private void Awake()

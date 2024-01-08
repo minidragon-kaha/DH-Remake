@@ -8,14 +8,23 @@ namespace DigiHero
     [AddComponentMenu("_DigiHero/DyableObject")]
     public class DyableObject : MonoBehaviour
     {
+        [Tooltip("數值容器")]
         [SerializeField] private StatsContainer statsContainer;
+        [Tooltip("移動動量應用器")]
         [SerializeField] private MotionApplier motionApplier;
+        [Tooltip("動畫控制器")]
         [SerializeField] private Animator animator;
+        [Tooltip("死亡狀態名稱")]
         [SerializeField] private string diedStateName;
+        [Tooltip("死亡音效")]
         [SerializeField] private AudioClip diedClip;
+        [Tooltip("死亡事件延遲時間")]
         [SerializeField] private float delayDiedEventTime = 1f;
+        [Tooltip("死亡事件，會在死亡延遲時間後觸發")]
         [SerializeField] private UnityEvent onDied;
+        [Tooltip("復活事件延遲時間")]
         [SerializeField] private float delayReviveEventTime = 1f;
+        [Tooltip("復活事件，會在復活延遲時間後觸發")]
         [SerializeField] private UnityEvent onRevived;
 
         private int diedStateHash;

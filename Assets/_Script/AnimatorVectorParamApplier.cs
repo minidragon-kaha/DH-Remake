@@ -7,10 +7,15 @@ namespace DigiHero
     [AddComponentMenu("_DigiHero/AnimatorVectorParamApplier")]
     public class AnimatorVectorParamApplier : MonoBehaviour
     {
+        [Tooltip("來源")]
         [SerializeField] private Vector3Variable fromValue;
+        [Tooltip("動畫控制器")]
         [SerializeField] private Animator animator;
+        [Tooltip("動畫參數名稱_x軸")]
         [SerializeField] private string paramName_x;
+        [Tooltip("動畫參數名稱_y軸")]
         [SerializeField] private string paramName_y;
+        [Tooltip("動畫參數名稱_z軸")]
         [SerializeField] private string paramName_z;
 
         private void Awake()

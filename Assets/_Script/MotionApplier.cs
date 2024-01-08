@@ -7,6 +7,7 @@ namespace DigiHero
     [AddComponentMenu("_DigiHero/MotionApplier")]
     public class MotionApplier : MonoBehaviour
     {
+        [Tooltip("移動動量")]
         [SerializeField] private Vector3Reference movingVector;
 
         private List<object> pauseLockers = new List<object>();

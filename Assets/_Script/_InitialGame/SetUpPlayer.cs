@@ -6,7 +6,9 @@ namespace DigiHero.Initial
     [UnityEngine.AddComponentMenu("_DigiHero/Initial/SetUpPlayer")]
     public class SetUpPlayer : StepBase
     {
+        [Tooltip("英雄prefab")]
         [SerializeField] private StatsContainer heroPrefab;
+        [Tooltip("英雄初始位置")]
         [SerializeField] private Vector3Variable startPositionVariable;
 
         public override void Process(System.Action onEnded)
