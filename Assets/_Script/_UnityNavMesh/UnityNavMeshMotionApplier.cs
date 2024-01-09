@@ -1,11 +1,12 @@
-using UnityEngine;
-using Obvious.Soap;
 using System.Collections.Generic;
+using Obvious.Soap;
+using UnityEngine;
+using UnityEngine.AI;
 
-namespace DigiHero
+namespace DigiHero.UnityNavMesh
 {
-    [AddComponentMenu("_DigiHero/MotionApplier")]
-    public class MotionApplier : MonoBehaviour
+    [AddComponentMenu("_DigiHero/UnityNavMesh/UnityNavMeshMotionApplier")]
+    public class UnityNavMeshMotionApplier : MonoBehaviour
     {
         [Tooltip("移動動量")]
         [SerializeField] private Vector3Reference movingVector;
@@ -36,6 +37,10 @@ namespace DigiHero
                 return;
 
             transform.position += movingVector.Value * statsContainer.MoveSpeed * Time.deltaTime;
+            if (NavMesh.SamplePosition(transform.position, out NavMeshHit hit, 100, NavMesh.AllAreas))
+            {
+                transform.position = hit.position;
+            }
         }
     }
 }

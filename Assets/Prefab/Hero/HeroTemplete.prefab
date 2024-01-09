@@ -161,7 +161,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 2d32feda76bfd440a9cedb122d069284, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -274,16 +274,16 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8544372371158814778}
-  - component: {fileID: 8544372371158814777}
   - component: {fileID: 8544372371158814776}
   - component: {fileID: 8544372371158814775}
   - component: {fileID: 8544372371158814774}
   - component: {fileID: 5174103441544853499}
   - component: {fileID: 7842088663796481086}
+  - component: {fileID: 7318400617366259796}
   m_Layer: 0
   m_Name: HeroTemplete
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -305,23 +305,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8544372371158814777
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8544372371158814779}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c156a7d7913164b0282c3825c888b4d0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  movingVector:
-    UseLocal: 0
-    LocalValue: {x: 0, y: 0, z: 0}
-    Variable: {fileID: 11400000, guid: b5fb8d6a256794d00895532bde427f31, type: 2}
-  statsContainer: {fileID: 8544372371158814774}
 --- !u!114 &8544372371158814776
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -372,7 +355,19 @@ MonoBehaviour:
     Variable: {fileID: 11400000, guid: 9e587c996eb114091815823039b997c2, type: 2}
   onHpChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: DigiHero.StepProcessor, Assembly-CSharp
+        m_MethodName: StartProcess
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &5174103441544853499
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -403,3 +398,20 @@ MonoBehaviour:
     UseLocal: 0
     LocalValue: {x: 0, y: 0, z: 0}
     Variable: {fileID: 11400000, guid: b5fb8d6a256794d00895532bde427f31, type: 2}
+--- !u!114 &7318400617366259796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8544372371158814779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e9a08617062a4892be9c5cd47c3fae8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movingVector:
+    UseLocal: 0
+    LocalValue: {x: 0, y: 0, z: 0}
+    Variable: {fileID: 11400000, guid: b5fb8d6a256794d00895532bde427f31, type: 2}
+  statsContainer: {fileID: 8544372371158814774}
