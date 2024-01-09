@@ -8,12 +8,12 @@ namespace DigiHero
     public class StatsContainer : MonoBehaviour
     {
         [Tooltip("移動速度")]
-        [SerializeField] private IntVariable moveSpeed;
+        [SerializeField] private IntReference moveSpeed;
 
         public float MoveSpeed { get { return (float)moveSpeed.Value; } }
 
         [Tooltip("生命值")]
-        [SerializeField] private IntVariable hp;
+        [SerializeField] private IntReference hp;
         public int Hp { get { return hp.Value; } }
 
         [Tooltip("當生命值更新時，會觸發此事件")]
@@ -21,7 +21,7 @@ namespace DigiHero
 
         private void Start()
         {
-            hp.OnValueChanged += OnHpChanged;
+            hp.Variable.OnValueChanged += OnHpChanged;
         }
 
         private void OnHpChanged(int newValue)

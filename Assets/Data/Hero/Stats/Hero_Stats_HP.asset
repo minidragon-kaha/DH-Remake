@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Hero_Stats_HP
   m_EditorClassIdentifier: 
   _guid: fbaa7065e5096456ca1ecb579c3ea9f6
-  _value: 100
+  _value: 10
   _debugLogEnabled: 0
   _saved: 0
   _defaultValue: 0
