@@ -280,6 +280,7 @@ GameObject:
   - component: {fileID: 5174103441544853499}
   - component: {fileID: 7842088663796481086}
   - component: {fileID: 7318400617366259796}
+  - component: {fileID: 7890068287721384062}
   m_Layer: 0
   m_Name: HeroTemplete
   m_TagString: Untagged
@@ -393,7 +394,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dee40e9762b314b6fa25049ff72bd3f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: {fileID: 11400000, guid: 8c078da86b2814d03a1d69f95e6e1d33, type: 2}
+  rotateSpeed:
+    UseLocal: 1
+    LocalValue: 10
+    Variable: {fileID: 0}
   targetForward:
     UseLocal: 0
     LocalValue: {x: 0, y: 0, z: 0}
@@ -415,3 +419,25 @@ MonoBehaviour:
     LocalValue: {x: 0, y: 0, z: 0}
     Variable: {fileID: 11400000, guid: b5fb8d6a256794d00895532bde427f31, type: 2}
   statsContainer: {fileID: 8544372371158814774}
+--- !u!195 &7890068287721384062
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8544372371158814779}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4

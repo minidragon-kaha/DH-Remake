@@ -21,7 +21,14 @@ namespace DigiHero
 
         private void Start()
         {
-            hp.Variable.OnValueChanged += OnHpChanged;
+            if (hp.Variable != null)
+            {
+                hp.Variable.OnValueChanged += OnHpChanged;
+            }
+            else
+            {
+                hp.OnLocalValueChanged += OnHpChanged;
+            }
         }
 
         private void OnHpChanged(int newValue)

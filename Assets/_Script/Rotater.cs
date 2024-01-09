@@ -7,7 +7,7 @@ namespace DigiHero
     public class Rotater : MonoBehaviour
     {
         [Tooltip("旋轉速度")]
-        [SerializeField] private FloatVariable rotateSpeed;
+        [SerializeField] private FloatReference rotateSpeed;
         [Tooltip("移動動量")]
         [SerializeField] private Vector3Reference targetForward;
 

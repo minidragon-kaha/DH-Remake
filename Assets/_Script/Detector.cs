@@ -1,7 +1,6 @@
 using UnityEngine;
 using Obvious.Soap;
 using UnityEngine.Events;
-using UnityEditor.EditorTools;
 
 namespace DigiHero
 {
@@ -13,7 +12,7 @@ namespace DigiHero
         [Tooltip("進入範圍內的物件有TaggedObject時，偵測目標標籤")]
         [SerializeField] private string targetTag;
         [Tooltip("偵測範圍")]
-        [SerializeField] private IntVariable detectRangeVariable;
+        [SerializeField] private IntReference detectRangeVariable;
         [Tooltip("目標列表，將會從中找出最近的目標")]
         [SerializeField] private ScriptableListTaggedObject scriptableListTaggedObject;
         [Tooltip("當目標更新時，會觸發此事件")]

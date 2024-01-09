@@ -6,17 +6,22 @@
     [System.Serializable]
     public abstract class VariableReference<V, T> where V : ScriptableVariable<T>
     {
+        public event System.Action<T> OnLocalValueChanged;
+
         public bool UseLocal = false;
         public T LocalValue;
         public V Variable;
-        
+
         public T Value
         {
             get => UseLocal ? LocalValue : Variable.Value;
             set
             {
                 if (UseLocal)
+                {
                     LocalValue = value;
+                    OnLocalValueChanged?.Invoke(LocalValue);
+                }
                 else
                     Variable.Value = value;
             }
